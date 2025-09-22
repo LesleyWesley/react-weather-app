@@ -4,12 +4,12 @@ export default function CurrentForecast() {
     //Code for Main Widget
       <div className="main-widget">
           <div className="current-info">
-              <span className="location">Berlin, Germany</span>
-              <time datetime="2025-09-05">Tuesday, Aug 5, 2025</time>
+              <span className="location preset-4">Berlin, Germany</span>
+              <time datetime="2025-09-05" className="preset-6">Tuesday, Aug 5, 2025</time>
           </div>
           <div className="current-temp-section">
-              <img src="./src/assets/icon-sunny.webp" alt="Sunny" />
-              <span className="current-temp-section">20°</span>
+              <img src="./src/assets/icon-sunny.webp" alt="Sunny" className="weather-icon"/>
+              <span className="current-temp-section preset-1">20°</span>
           </div>
       </div>
 
