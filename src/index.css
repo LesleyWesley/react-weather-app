@@ -28,11 +28,13 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-image: linear-gradient(135deg, #FF00FF, #FCCF3A);
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color: #FFF;
 }
 
 button {
