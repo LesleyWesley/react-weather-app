@@ -81,6 +81,7 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 0;
+  width: 100%;
 }
 
 main {
@@ -97,6 +98,7 @@ main {
   align-items: center;
   flex-direction: column;
   gap: 2rem;
+  width: 100%;
 }
 
 .left-side {
@@ -121,12 +123,17 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   background-image: url("./src/assets/bg-today-small.svg");
-  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  gap: 1rem;
+  background-size: 100%;
+}
+
+.main-widget-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .current-info {
@@ -159,7 +166,7 @@ main {
 }
 
 .current-detail-card {
-  width: 38%;
+  width: 37%;
   background-color: var(--card-bg-clr);
   padding: 1rem;
   border-radius: .75rem;
@@ -168,9 +175,45 @@ main {
   align-items: flex-start;
   flex-direction: column;
   gap: 1.5rem;
+  border: 1px solid var(--card-border-clr);
 }
 
 h2 {
   margin: 0;
   color: var(--dark-text-clr);
+}
+
+/*==============================================
+      MEDIA QUERIES - Tablet
+================================================*/
+
+@media (min-width: 700px) {
+
+  /*CurrentForecast Component*/
+  .current-forecast-section {
+    gap: 1rem;
+  }
+
+  .main-widget {
+      background-image: url("./src/assets/bg-today-large.svg");
+      aspect-ratio: auto;
+  }
+
+  .main-widget-container {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: 11% 0;
+  }
+
+  .current-info {
+    align-items: flex-start;
+  }
+
+
+  .current-details {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
