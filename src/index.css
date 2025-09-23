@@ -183,6 +183,19 @@ h2 {
   color: var(--dark-text-clr);
 }
 
+/*Daily Forecast Section - Mobile*/
+
+.daily-forecast-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.daily-icon {
+  width: 20%;
+}
+
 /*==============================================
       MEDIA QUERIES - Tablet
 ================================================*/
