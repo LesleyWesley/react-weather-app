@@ -190,7 +190,7 @@ h2 {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 .daily-card-container {
@@ -213,11 +213,11 @@ h2 {
 }
 
 h4 {
-  margin-top: 1rem;
+  margin: 1rem 0;
 }
 
 .daily-icon {
-  width: 50%;
+  width: 75%;
 }
 
 .day-temp-container {
@@ -225,7 +225,7 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1.25rem 0 1rem 0;
+  margin: 1rem 0;
 }
 
 .daily-low {
@@ -264,5 +264,12 @@ h4 {
     flex-wrap: nowrap;
     justify-content: space-between;
     width: 100%;
+  }
+
+
+  /*Daily Forecast Section - Desktop*/
+
+  .day-card {
+    width: calc((100% - 6rem)/7);
   }
 }
