@@ -235,6 +235,13 @@ h4 {
 
 /*Hourly Forecast Section - Mobile*/
 
+.right-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .hourly-forecast-section {
   background-color: var(--card-bg-clr);
   border-radius: .75rem;
@@ -244,6 +251,7 @@ h4 {
   flex-direction: column;
   gap: 1rem;
   padding-bottom: 1.25rem;
+  width: 100%;
 }
 
 .hourly-forecast-section header {
@@ -269,6 +277,7 @@ h4 {
   background-color: var(--hour-card-bg-clr);
   border: 1px solid var(--card-border-clr);
   border-radius: .5rem;
+  width: 100%;
 }
 
 .hourly-content-container {
@@ -295,7 +304,11 @@ h4 {
 
 @media (min-width: 700px) {
 
-  /*CurrentForecast Component*/
+  body {
+    padding-bottom: 5rem;
+  }
+
+  /*CurrentForecast Component - Tablet*/
   .current-forecast-section {
     gap: 1rem;
   }
@@ -324,7 +337,7 @@ h4 {
   }
 
 
-  /*Daily Forecast Section - Desktop*/
+  /*Daily Forecast Section - Tablet*/
 
   .day-card {
     width: calc((100% - 6rem)/7);
