@@ -191,7 +191,7 @@ h2 {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  margin: 1rem 0;
+  margin-top: 1rem;
 }
 
 .daily-card-container {
@@ -316,13 +316,13 @@ h4 {
   .main-widget {
       background-image: url("./src/assets/bg-today-large.svg");
       aspect-ratio: auto;
+      height: 17.875rem;
   }
 
   .main-widget-container {
     flex-direction: row;
     justify-content: space-between;
     width: 90%;
-    margin: 11% 0;
   }
 
   .current-info {
@@ -336,10 +336,42 @@ h4 {
     width: 100%;
   }
 
+  .current-detail-card {
+    width: calc((100% - 3rem)/4);
+    min-width: 7rem;
+  }
+
 
   /*Daily Forecast Section - Tablet*/
 
   .day-card {
     width: calc((100% - 6rem)/7);
+  }
+
+}
+
+/*================================================
+    MEDIA QUERIES - DESKTOP
+====================================================*/
+
+@media (min-width: 1000px) {
+  main {
+    width: 80%;
+  }
+
+  .grid-section {
+    flex-direction: row;
+  }
+
+  .left-side {
+    gap: 1rem;
+  }
+
+  .current-forecast-section {
+    gap: 2rem;
+  }
+
+  .right-side {
+    width: 40%;
   }
 }
