@@ -87,7 +87,7 @@ body {
 
 /*Header Styling - Mobile*/
 
-header {
+.site-header {
   width: 90%;
   display: flex;
   justify-content: space-between;
@@ -326,6 +326,12 @@ h4 {
     padding-bottom: 5rem;
   }
 
+  /*Heading - Tablet */
+
+  header img {
+    width: 70%;
+  }
+
   /*CurrentForecast Component - Tablet*/
   .current-forecast-section {
     gap: 1rem;
@@ -373,17 +379,27 @@ h4 {
 ====================================================*/
 
 @media (min-width: 1100px) {
+
+  .site-header {
+    padding-top: 2rem;
+    width: 82%;
+  }
+
+  header img {
+    width: 100%;
+  }
+
   main {
     width: 82%;
   }
 
   .grid-section {
     flex-direction: row;
-    align-items: stretch;
   }
 
   .right-side {
     width: 50%;
+
   }
 
   .hourly-forecast-section {

@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header>
+    <header className="site-header">
       <div className="header-left">
         <img src="./src/assets/logo.svg" alt="Weather Now Logo" />
       </div>
