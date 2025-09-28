@@ -9,7 +9,20 @@ export default function MainSection() {
       <SearchSection />
       <div className="grid-section">
           <div className="left-side">
-              <CurrentForecast />
+              <CurrentForecast
+                  location="Berlin, Germany"
+                  datetime="09-05-2025"
+                  currentDay="Tuesday, Aug 5, 2025"
+                  img="./src/assets/icon-sunny.webp"
+                  alt="Sunny"
+                  currentTemp={20}
+                  feelsLike={18}
+                  humidity={46}
+                  wind={14}
+                  windUnits="km/h"
+                  precipitation={0}
+                  precipUnits="mm"
+               />
               <DailyForecast />
           </div>
           <div className="right-side">
