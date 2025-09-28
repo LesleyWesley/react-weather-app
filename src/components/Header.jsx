@@ -5,7 +5,11 @@ export default function Header() {
         <img src="./src/assets/logo.svg" alt="Weather Now Logo" />
       </div>
       <div className="header-right">
-        <p>Units Dropdown</p>
+        <button buttontype="button" className="units-dropdown-button preset-7">
+          <img src="./src/assets/icon-units.svg" alt="Units Icon" />
+          Units
+          <img src="./src/assets/icon-dropdown.svg" alt="dropdown icon" />
+        </button>
       </div>
     </header>
   )
