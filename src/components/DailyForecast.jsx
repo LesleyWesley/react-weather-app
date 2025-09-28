@@ -5,13 +5,56 @@ export default function DailyForecast() {
     <section className="daily-forecast-section">
       <h3 className="preset-5">Daily forecast</h3>
       <div className="daily-card-container">
-          <DailyCard />
-          <DailyCard />
-          <DailyCard />
-          <DailyCard />
-          <DailyCard />
-          <DailyCard />
-          <DailyCard />
+          <DailyCard
+            day="Tues"
+            img="./src/assets/icon-rain.webp"
+            alt="Rainy"
+            high={20}
+            low={14}
+          />
+          <DailyCard
+            day="Tues"
+            img="./src/assets/icon-rain.webp"
+            alt="Rainy"
+            high={20}
+            low={14}
+          />
+          <DailyCard
+            day="Tues"
+            img="./src/assets/icon-rain.webp"
+            alt="Rainy"
+            high={20}
+            low={14}
+          />
+          <DailyCard
+            day="Tues"
+            img="./src/assets/icon-rain.webp"
+            alt="Rainy"
+            high={20}
+            low={14}
+          />
+          <DailyCard
+            day="Tues"
+            img="./src/assets/icon-rain.webp"
+            alt="Rainy"
+            high={20}
+            low={14}
+          />
+          <DailyCard
+            day="Tues"
+            img="./src/assets/icon-rain.webp"
+            alt="Rainy"
+            high={20}
+            low={14}
+          />
+          <DailyCard
+            day="Tues"
+            img="./src/assets/icon-rain.webp"
+            alt="Rainy"
+            high={20}
+            low={14}
+          />
+
       </div>
     </section>
   )

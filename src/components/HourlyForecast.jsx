@@ -8,14 +8,54 @@ export default function HourlyForecast() {
           <p>Day Dropdown</p>
         </header>
         <div className="hourly-card-container">
-            <HourlyCard />
-            <HourlyCard />
-            <HourlyCard />
-            <HourlyCard />
-            <HourlyCard />
-            <HourlyCard />
-            <HourlyCard />
-            <HourlyCard />
+            <HourlyCard
+                img="./src/assets/icon-overcast.webp"
+                alt="Overcast"
+                time="4 PM"
+                temp={20}
+            />
+            <HourlyCard
+                img="./src/assets/icon-overcast.webp"
+                alt="Overcast"
+                time="4 PM"
+                temp={20}
+            />
+            <HourlyCard
+                img="./src/assets/icon-overcast.webp"
+                alt="Overcast"
+                time="4 PM"
+                temp={20}
+            />
+            <HourlyCard
+                img="./src/assets/icon-overcast.webp"
+                alt="Overcast"
+                time="4 PM"
+                temp={20}
+            />
+            <HourlyCard
+                img="./src/assets/icon-overcast.webp"
+                alt="Overcast"
+                time="4 PM"
+                temp={20}
+            />
+            <HourlyCard
+                img="./src/assets/icon-overcast.webp"
+                alt="Overcast"
+                time="4 PM"
+                temp={20}
+            />
+            <HourlyCard
+                img="./src/assets/icon-overcast.webp"
+                alt="Overcast"
+                time="4 PM"
+                temp={20}
+            />
+            <HourlyCard
+                img="./src/assets/icon-overcast.webp"
+                alt="Overcast"
+                time="4 PM"
+                temp={20}
+            />
         </div>
     </section>
   )

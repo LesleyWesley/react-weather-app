@@ -1,11 +1,11 @@
-export default function DailyCard() {
+export default function DailyCard(props) {
   return (
     <article className="day-card">
-        <h4 className="preset-6">Tue</h4>
-        <img src="./src/assets/icon-rain.webp" alt="Rainy" className="daily-icon"/>
+        <h4 className="preset-6">{props.day}</h4>
+        <img src={props.img} alt={props.alt} className="daily-icon"/>
         <div className="day-temp-container">
-          <span className="daily-high preset-7">20°</span>
-          <span className="daily-low preset-7">14°</span>
+          <span className="daily-high preset-7">{props.high}°</span>
+          <span className="daily-low preset-7">{props.low}°</span>
         </div>
     </article>
   )
