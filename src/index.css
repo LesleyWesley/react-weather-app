@@ -119,11 +119,14 @@ header img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
 h1 {
   text-align: center;
   width: 90%;
+  max-width: 30rem;
 }
 
 .search-form {
@@ -144,7 +147,7 @@ h1 {
   background-position: 1rem 50%;
   background-repeat: no-repeat;
   border: none;
-  border-radius: .5rem;
+  border-radius: .75rem;
   color: var(--dark-text-clr);
   text-align: center;
 }
@@ -162,7 +165,7 @@ h1 {
   color: var(--white);
   width: 100%;
   padding: 1rem;
-  border-radius: .5rem;
+  border-radius: .75rem;
 }
 
 /*Main Styling - Mobile*/
@@ -397,6 +400,17 @@ h4 {
     width: 70%;
   }
 
+  /*Searchbar Section - Tablet*/
+
+  .search-form {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .search-button {
+    width: 20%;
+  }
+
   /*CurrentForecast Component - Tablet*/
   .current-forecast-section {
     gap: 1rem;
@@ -462,6 +476,26 @@ h4 {
   main {
     width: 82%;
   }
+
+  /*Searchbar Section - Desktop*/
+
+  h1 {
+    max-width: none;
+  }
+
+  .search-form {
+    width: 55%;
+    margin:1rem 0 1.5rem 0;
+  }
+
+  .search-button {
+    width: 25%;
+  }
+
+
+  /*Grid Section - Desktop*/
+
+
 
   .grid-section {
     flex-direction: row;
