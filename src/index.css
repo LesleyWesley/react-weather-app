@@ -100,6 +100,8 @@ header img {
   display: flex;
 }
 
+
+
 .units-dropdown-button {
   display: flex;
   justify-content: center;
@@ -110,6 +112,13 @@ header img {
   background-color: var(--card-bg-clr);
   border: none;
   border-radius: .5rem;
+}
+
+.unit-dropdown {
+  top: 3.5rem;
+  background-color: var(--card-bg-clr);
+  position: absolute;
+  margin-right: 5%;
 }
 
 /*Search Section - Mobile*/
@@ -166,6 +175,17 @@ h1 {
   width: 100%;
   padding: 1rem;
   border-radius: .75rem;
+}
+
+.search-button:hover {
+  background-color: var(--search-button-focus-bg);
+  cursor: pointer;
+}
+
+.search-button:focus {
+  box-shadow: 0 0 0 3px var(--body-bg-clr), 0 0 0 6px var(--search-button-bg-clr);
+  outline: none;
+
 }
 
 /*Main Styling - Mobile*/
@@ -485,6 +505,11 @@ h4 {
   .units-dropdown-button {
     padding: .75rem 1rem;
     gap: .75rem;
+  }
+
+  .unit-dropdown {
+    top: 6rem;
+    margin-right: 9%;
   }
 
   main {
