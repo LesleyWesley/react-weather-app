@@ -5,7 +5,10 @@ export default function HourlyForecast() {
     <section className="hourly-forecast-section">
         <header>
           <h3 className="preset-5">Hourly forecast</h3>
-          <p>Day Dropdown</p>
+          <button type="button" className="day-dropdown">
+            Tuesday
+            <img src="./src/assets/icon-dropdown.svg" alt="" />
+          </button>
         </header>
         <div className="hourly-card-container">
             <HourlyCard
