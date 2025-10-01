@@ -1,4 +1,5 @@
 import HourlyCard from "./HourlyCard"
+import DayDropdownModal from "./DayDropdownModal"
 
 export default function HourlyForecast() {
   return (
@@ -9,6 +10,7 @@ export default function HourlyForecast() {
             Tuesday
             <img src="./src/assets/icon-dropdown.svg" alt="" />
           </button>
+          <DayDropdownModal />
         </header>
         <div className="hourly-card-container">
             <HourlyCard

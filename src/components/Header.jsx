@@ -1,3 +1,5 @@
+import UnitDropdownModal from "./UnitDropdownModal"
+
 export default function Header() {
   return (
     <header className="site-header">
@@ -10,9 +12,7 @@ export default function Header() {
           Units
           <img src="./src/assets/icon-dropdown.svg" alt="dropdown icon" />
         </button>
-        <div className="unit-dropdown">
-          <p>This will be the Unit Dropdown Menu</p>
-        </div>
+        <UnitDropdownModal />
       </div>
     </header>
   )
