@@ -14,7 +14,7 @@ export default function HourlyForecast() {
     <section className="hourly-forecast-section">
         <header>
           <h3 className="preset-5">Hourly forecast</h3>
-          <button type="button" className="day-dropdown" onClick={handleClick}>
+          <button type="button" className="day-dropdown" onClick={handleClick} aria-label={`Day menu is currently ${open ? "open": "closed"}. Click this button to ${open ? "close" : "open"}.`}>
             Tuesday
             <img src="./src/assets/icon-dropdown.svg" alt="" />
           </button>

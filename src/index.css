@@ -114,6 +114,16 @@ header img {
   border-radius: .5rem;
 }
 
+.units-dropdown-button:hover {
+  background-color: var(--hour-card-bg-clr);
+  cursor: pointer;
+}
+
+.units-dropdown-button:focus {
+  box-shadow: 0 0 0 3px var(--body-bg-clr), 0 0 0 6px var(--mystery-grey);
+  outline: none;
+}
+
 .unit-dropdown {
   top: 3.5rem;
   background-color: var(--card-bg-clr);
@@ -393,6 +403,17 @@ h4 {
   border: none;
   padding: .6rem 1rem;
   font-size: 1rem;
+}
+
+.day-dropdown:hover {
+  background-color: var(--card-bg-clr);
+  box-shadow: 0 0 0 3px var(--card-border-clr);
+  cursor: pointer;
+}
+
+.day-dropdown:focus {
+  box-shadow: 0 0 0 3px var(--body-bg-clr), 0 0 0 6px var(--mystery-grey);
+  outline: none;
 }
 
 .day-dropdown-modal {

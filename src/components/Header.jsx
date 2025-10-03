@@ -15,7 +15,7 @@ export default function Header() {
         <img src="./src/assets/logo.svg" alt="Weather Now Logo" />
       </div>
       <div className="header-right">
-        <button buttontype="button" className="units-dropdown-button preset-7" onClick={handleClick}>
+        <button buttontype="button" className="units-dropdown-button preset-7" onClick={handleClick} aria-label={`Unit menu is currently ${unitModalOpen ? "open": "closed"}. Click this button to ${unitModalOpen ? "close" : "open"}.`}>
           <img src="./src/assets/icon-units.svg" alt="Units Icon" />
           Units
           <img src="./src/assets/icon-dropdown.svg" alt="dropdown icon" />
