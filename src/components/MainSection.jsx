@@ -1,34 +1,16 @@
 import SearchSection from "./SearchSection"
-import CurrentForecast from "./CurrentForecast"
-import DailyForecast from "./DailyForecast"
-import HourlyForecast from "./HourlyForecast"
+import GridSection from "./GridSection"
+import NoResults from "./NoResults"
+import React from "react"
 
 export default function MainSection() {
+
+  const [searchResults, setSearchResults] = React.useState(true);
+
   return (
     <main>
       <SearchSection />
-      <div className="grid-section">
-          <div className="left-side">
-              <CurrentForecast
-                  location="Berlin, Germany"
-                  datetime="09-05-2025"
-                  currentDay="Tuesday, Aug 5, 2025"
-                  img="./src/assets/icon-sunny.webp"
-                  alt="Sunny"
-                  currentTemp={20}
-                  feelsLike={18}
-                  humidity={46}
-                  wind={14}
-                  windUnits="km/h"
-                  precipitation={0}
-                  precipUnits="mm"
-               />
-              <DailyForecast />
-          </div>
-          <div className="right-side">
-              <HourlyForecast />
-          </div>
-      </div>
+      {searchResults ? <GridSection /> : <NoResults />}
     </main>
   )
 }
