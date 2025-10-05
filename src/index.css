@@ -417,16 +417,6 @@ h4 {
   outline: none;
 }
 
-.day-dropdown-modal {
-  position: absolute;
-  background-color: var(--card-bg-clr);
-  border: 1px solid var(--card-border-clr);
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
-  border-radius: .5rem;
-  top: 4rem;
-  right: 0;
-}
-
 .hourly-card-container {
   display: flex;
   justify-content: center;
@@ -462,6 +452,35 @@ h4 {
 
 .hourly-icon {
   width: 20%;
+}
+
+/*Day Dropdown Modal - Mobile*/
+
+.day-dropdown-modal {
+  position: absolute;
+  background-color: var(--card-bg-clr);
+  border: 1px solid var(--card-border-clr);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
+  border-radius: .5rem;
+  top: 4rem;
+  right: -5px;
+  display: flex;
+  flex-direction: column;
+  padding: .5rem;
+  width: 55%;
+}
+
+.day-dropdown-modal > label {
+  padding: .75rem;
+}
+
+.day-dropdown-modal > label:has(input[type="radio"]:checked) {
+  background-color: var(--hour-card-bg-clr);
+  border-radius: .5rem;
+}
+
+.day-dropdown-modal > label > input {
+  opacity: 0;
 }
 
 /*==============================================
