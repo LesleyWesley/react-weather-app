@@ -1,37 +1,44 @@
+import React from "react"
+
 export default function DayDropdownModal() {
 
+  const [selectedDay, setSelectedDay] = React.useState("Tuesday");
+
+  function handleChange(e) {
+    const newSelectedDay = e.target.value;
+    console.log(newSelectedDay)
+  }
 
   return (
-    <fieldset className="day-dropdown-modal">
+    <form className="day-dropdown-modal" onChange={handleChange}>
       <label>Monday
-        <input type="radio" name="dayOfWeek" value="monday" />
+        <input type="radio" name="dayOfWeek" value="Monday" />
       </label>
 
       <label>Tuesday
-        <input type="radio" name="dayOfWeek" value="tuesday" defaultChecked={true}/>
+        <input type="radio" name="dayOfWeek" value="Tuesday" defaultChecked={true}/>
       </label>
 
       <label>Wednesday
-        <input type="radio" name="dayOfWeek" value="wednesday" />
+        <input type="radio" name="dayOfWeek" value="Wednesday" />
       </label>
 
       <label>Thursday
-        <input type="radio" name="dayOfWeek" value="thursday" />
+        <input type="radio" name="dayOfWeek" value="Thursday" />
       </label>
 
       <label>Friday
-        <input type="radio" name="dayOfWeek" value="friday" />
+        <input type="radio" name="dayOfWeek" value="Friday" />
       </label>
 
       <label>Saturday
-        <input type="radio" name="dayOfWeek" value="saturday" />
+        <input type="radio" name="dayOfWeek" value="Saturday" />
       </label>
 
       <label>Sunday
-        <input type="radio" name="dayOfWeek" value="sunday" />
+        <input type="radio" name="dayOfWeek" value="Sunday" />
       </label>
-
-    </fieldset>
+    </form>
   )
 }
 
