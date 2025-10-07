@@ -479,10 +479,13 @@ h4 {
   border-radius: .5rem;
 }
 
-.day-dropdown-modal > label > input {
+/*.day-dropdown-modal > label > input {
   opacity: 0;
-}
+}*/
 
+.day-dropdown-modal > button {
+  height: 0;
+}
 
 /*==============================================
       MEDIA QUERIES - Tablet
