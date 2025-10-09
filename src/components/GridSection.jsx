@@ -12,7 +12,7 @@ export default function GridSection() {
 
   const today = new Date();
   const mainWidgetDate = today.toLocaleDateString("en-EN", options);
-  console.log(today)
+
   return (
     <div className="grid-section">
         <div className="left-side">
@@ -33,7 +33,9 @@ export default function GridSection() {
             <DailyForecast />
         </div>
         <div className="right-side">
-            <HourlyForecast />
+            <HourlyForecast
+                today={today}
+            />
         </div>
     </div>
   )

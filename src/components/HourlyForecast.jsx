@@ -2,7 +2,10 @@ import HourlyCard from "./HourlyCard"
 import DayDropdownModal from "./DayDropdownModal"
 import React from "react"
 
-export default function HourlyForecast() {
+export default function HourlyForecast(props) {
+
+  const [day, setDay] = React.useState(props.today.toLocaleDateString("en-EN", { weekday: "long" }))
+  console.log(day)
 
   const [open, setOpen] = React.useState(false)
 
@@ -15,7 +18,7 @@ export default function HourlyForecast() {
         <header>
           <h3 className="preset-5">Hourly forecast</h3>
           <button type="button" className="day-dropdown" onClick={handleClick} aria-label={`Day menu is currently ${open ? "open": "closed"}. Click this button to ${open ? "close" : "open"}.`}>
-            Tuesday
+            {day}
             <img src="./src/assets/icon-dropdown.svg" alt="" />
           </button>
           {open && <DayDropdownModal />}
