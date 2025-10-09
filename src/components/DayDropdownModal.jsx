@@ -7,23 +7,10 @@ export default function DayDropdownModal() {
 
   return (
     <form className="day-dropdown-modal">
-      <label>Monday
-        <input
-          type="radio"
-          name="dayOfWeek"
-          value="Monday"
-
-        />
-      </label>
-
-        <label>Tuesday
-          <input
-            type="radio"
-            name="dayOfWeek"
-            value="Tuesday"
-            
-          />
-      </label>
+      <select name="dayOfWeek">
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+      </select>
 
 
     </form>
