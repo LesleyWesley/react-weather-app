@@ -21,7 +21,7 @@ export default function HourlyForecast(props) {
             {day}
             <img src="./src/assets/icon-dropdown.svg" alt="" />
           </button>
-          {open && <DayDropdownModal />}
+          {open && <DayDropdownModal day={day}/>}
         </header>
         <div className="hourly-card-container">
             <HourlyCard
